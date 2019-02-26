@@ -19,6 +19,6 @@ if [ $CLOUD_PROVIDER == "gcloud" ]; then
     else
       gcloud config set compute/region $GOOGLE_COMPUTE_REGION
     fi
-    gcloud container clusters get-credentials $GOOGLE_CLUSTER_NAME
+    gcloud container clusters get-credentials ${GOOGLE_CLUSTER_NAME}
   fi
   fi
